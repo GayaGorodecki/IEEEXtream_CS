@@ -10,7 +10,10 @@ namespace IEEEXtream
     {
         static void Main(string[] args)
         {
-
+            DigitFunSolution.DigitFun();
+            DogWalkingSolution.DogWalking();
+            MagicSquareSolution.MagicSquare();
+            PaintersDilemmaSolution.PaintersDilemma();
         }
     }
 }

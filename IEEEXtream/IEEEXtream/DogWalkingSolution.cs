@@ -4,7 +4,7 @@ using System.IO;
 
 class DogWalkingSolution
 {
-    static void Main(string[] args)
+    public static void DogWalking()
     {
         int numOfTestCases = Convert.ToInt32(Console.ReadLine()); // Get num of tast cases for the loop
 

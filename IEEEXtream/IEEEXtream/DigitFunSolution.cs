@@ -4,7 +4,7 @@ using System.IO;
 
 class DigitFunSolution
 {
-    static void Main(String[] args)
+    public static void DigitFun()
     {
         List<string> input = getInput();
 

@@ -4,7 +4,7 @@ using System.IO;
 
 class MagicSquareSolution
 {
-    static void Main(String[] args)
+    public static void MagicSquare()
     {
         int squareSize = Convert.ToInt32(Console.ReadLine());
         int sumOfdiagonal = 0, sumOfAntiDiagonal = 0;
