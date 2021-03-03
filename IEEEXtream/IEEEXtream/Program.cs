@@ -14,6 +14,7 @@ namespace IEEEXtream
             DogWalkingSolution.DogWalking();
             MagicSquareSolution.MagicSquare();
             PaintersDilemmaSolution.PaintersDilemma();
+            TrollCoderSolution.trollCoder();
         }
     }
 }

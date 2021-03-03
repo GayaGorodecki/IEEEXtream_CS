@@ -45,12 +45,11 @@
   <ItemGroup>
     <Compile Include="DigitFunSolution.cs" />
     <Compile Include="DogWalkingSolution.cs" />
-    <Compile Include="X-FoodTruckSolution.cs" />
     <Compile Include="MagicSquareSolution.cs" />
-    <Compile Include="X-MemoryManagementSolution.cs" />
     <Compile Include="PaintersDilemmaSolution.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrollCoderSolution.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
