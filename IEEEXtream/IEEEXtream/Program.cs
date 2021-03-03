@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IEEEXtream
+﻿namespace IEEEXtream
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DigitFunSolution.DigitFun();
-            DogWalkingSolution.DogWalking();
-            MagicSquareSolution.MagicSquare();
-            PaintersDilemmaSolution.PaintersDilemma();
-            TrollCoderSolution.trollCoder();
+            //DigitFunSolution.DigitFun();
+            //DogWalkingSolution.DogWalking();
+            //MagicSquareSolution.MagicSquare();
+            //PaintersDilemmaSolution.PaintersDilemma();
+            //TrollCoderSolution.trollCoder();
+            XtremeRappersSolution.XtremeRappers();
         }
     }
 }
