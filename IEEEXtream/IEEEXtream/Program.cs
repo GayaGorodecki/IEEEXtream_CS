@@ -4,12 +4,13 @@
     {
         static void Main(string[] args)
         {
-            //DigitFunSolution.DigitFun();
-            //DogWalkingSolution.DogWalking();
-            //MagicSquareSolution.MagicSquare();
-            //PaintersDilemmaSolution.PaintersDilemma();
-            //TrollCoderSolution.trollCoder();
+            BearSumsSolution.BearSums();
             XtremeRappersSolution.XtremeRappers();
+            TrollCoderSolution.trollCoder();
+            PaintersDilemmaSolution.PaintersDilemma();
+            MagicSquareSolution.MagicSquare();
+            DogWalkingSolution.DogWalking();
+            DigitFunSolution.DigitFun();
         }
     }
 }

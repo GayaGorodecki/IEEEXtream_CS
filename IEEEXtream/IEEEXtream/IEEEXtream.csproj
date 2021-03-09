@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BearSumsSoultion.cs" />
     <Compile Include="DigitFunSolution.cs" />
     <Compile Include="DogWalkingSolution.cs" />
     <Compile Include="MagicSquareSolution.cs" />
