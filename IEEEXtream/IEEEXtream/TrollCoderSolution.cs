@@ -2,7 +2,7 @@
 
 class TrollCoderSolution
 {
-    public static void trollCoder()
+    public static void TrollCoder()
     {
         int N = Convert.ToInt32(Console.ReadLine()); // Length of the sequence
         int[] quary = new int[N]; // Initialized to zeros

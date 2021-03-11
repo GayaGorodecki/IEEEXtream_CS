@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BearSumsSoultion.cs" />
+    <Compile Include="ConcentrationGameSolution.cs" />
     <Compile Include="DigitFunSolution.cs" />
     <Compile Include="DogWalkingSolution.cs" />
+    <Compile Include="X - KabloomSolution.cs" />
     <Compile Include="MagicSquareSolution.cs" />
     <Compile Include="PaintersDilemmaSolution.cs" />
     <Compile Include="Program.cs" />
