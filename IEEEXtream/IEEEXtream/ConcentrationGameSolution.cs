@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 class pairs
 {
@@ -16,7 +13,6 @@ class ConcentrationGameSolution
     public static void ConcentrationGame()
     {
         int N = Convert.ToInt32(Console.ReadLine());
-        bool foundNext = false;
 
         Dictionary<string, pairs> seen = new Dictionary<string, pairs>(); // To find matches.
         HashSet<int> matched = new HashSet<int>(); // For not check index that already matched.
@@ -32,10 +28,10 @@ class ConcentrationGameSolution
         checkedPairs.Add(pair);
         checkedPairs.Add(samePair);
 
-        String ans = String.Empty;
-        while (!((ans = Console.ReadLine()).Equals("-1"))) // Not invalid move.
+        string reply = string.Empty;
+        while (!((reply = Console.ReadLine()).Equals("-1"))) // Not invalid move.
         {
-            if (ans.Equals("MATCH"))
+            if (reply.Equals("MATCH"))
             {
                 matched.Add(i1);
                 matched.Add(i2);
@@ -48,7 +44,7 @@ class ConcentrationGameSolution
             }
             else
             {
-                string[] nums = ans.Split();
+                string[] nums = reply.Split();
                 if (seen.ContainsKey(nums[0]) || seen.ContainsKey(nums[1])) // Update index of cards -> get next match.
                 {
                     bool updateFirst = false, updateSecond = false;
@@ -103,6 +99,7 @@ class ConcentrationGameSolution
                 }
             }
 
+            bool foundNext = false;
             foreach (pairs p in seen.Values) // Search for more matches.
             {
                 if (p.i1 != 0 && p.i2 != 0 && !matched.Contains(p.i1)) // If there is a pair with two indexes.
@@ -137,7 +134,6 @@ class ConcentrationGameSolution
             }
 
             Console.WriteLine(i1 + " " + i2);
-            foundNext = false;
         }
     }
 }
