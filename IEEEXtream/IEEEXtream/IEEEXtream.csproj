@@ -47,6 +47,7 @@
     <Compile Include="ConcentrationGameSolution.cs" />
     <Compile Include="DigitFunSolution.cs" />
     <Compile Include="DogWalkingSolution.cs" />
+    <Compile Include="TelescopeSchedulingSolution.cs" />
     <Compile Include="X - KabloomSolution.cs" />
     <Compile Include="MagicSquareSolution.cs" />
     <Compile Include="PaintersDilemmaSolution.cs" />

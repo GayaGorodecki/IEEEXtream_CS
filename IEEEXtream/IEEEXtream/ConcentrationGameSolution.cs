@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class pairs
+class Pair
 {
-    public string card;
-    public int i1;
-    public int i2;
+    public string card { get; set; }
+    public int i1 { get; set; }
+    public int i2 { get; set; }
 }
 
 class ConcentrationGameSolution
@@ -14,7 +14,7 @@ class ConcentrationGameSolution
     {
         int N = Convert.ToInt32(Console.ReadLine());
 
-        Dictionary<string, pairs> seen = new Dictionary<string, pairs>(); // To find matches.
+        Dictionary<string, Pair> seen = new Dictionary<string, Pair>(); // To find matches.
         HashSet<int> matched = new HashSet<int>(); // For not check index that already matched.
         HashSet<Tuple<int, int>> checkedPairs = new HashSet<Tuple<int, int>>(); // For not check checked pairs again.
         HashSet<int> checkedIndex = new HashSet<int>(); // For not check index that already checked.
@@ -48,7 +48,7 @@ class ConcentrationGameSolution
                 if (seen.ContainsKey(nums[0]) || seen.ContainsKey(nums[1])) // Update index of cards -> get next match.
                 {
                     bool updateFirst = false, updateSecond = false;
-                    foreach (KeyValuePair<string, pairs> p in seen)
+                    foreach (KeyValuePair<string, Pair> p in seen)
                     {
                         if (p.Key == nums[0])
                         {
@@ -83,7 +83,7 @@ class ConcentrationGameSolution
 
                 if (!seen.ContainsKey(nums[0])) // If not seen - add new seen card.
                 {
-                    pairs newPair = new pairs();
+                    Pair newPair = new Pair();
                     newPair.card = nums[0];
                     newPair.i1 = i1;
                     seen.Add(nums[0], newPair);
@@ -91,7 +91,7 @@ class ConcentrationGameSolution
                 }
                 if (!seen.ContainsKey(nums[1]))
                 {
-                    pairs newPair = new pairs();
+                    Pair newPair = new Pair();
                     newPair.card = nums[1];
                     newPair.i2 = i2;
                     seen.Add(nums[1], newPair);
@@ -100,7 +100,7 @@ class ConcentrationGameSolution
             }
 
             bool foundNext = false;
-            foreach (pairs p in seen.Values) // Search for more matches.
+            foreach (Pair p in seen.Values) // Search for more matches.
             {
                 if (p.i1 != 0 && p.i2 != 0 && !matched.Contains(p.i1)) // If there is a pair with two indexes.
                 {

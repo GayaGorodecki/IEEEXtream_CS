@@ -6,6 +6,9 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Telescope Scheduling:");
+            TelescopeSchedulingSolution.TelescopeScheduling();
+
             Console.WriteLine("Concentration Game:");        
             ConcentrationGameSolution.ConcentrationGame();
 
