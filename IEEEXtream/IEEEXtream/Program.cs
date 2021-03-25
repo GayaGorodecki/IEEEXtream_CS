@@ -6,6 +6,9 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hotel Wiring:");
+            HotelWiringSolution.HotelWiring();
+
             Console.WriteLine("Telescope Scheduling:");
             TelescopeSchedulingSolution.TelescopeScheduling();
 
