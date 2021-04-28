@@ -6,6 +6,9 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Full Adder:");
+            FullAdderSolution.FullAdder();
+
             Console.WriteLine("Hotel Wiring:");
             HotelWiringSolution.HotelWiring();
 
