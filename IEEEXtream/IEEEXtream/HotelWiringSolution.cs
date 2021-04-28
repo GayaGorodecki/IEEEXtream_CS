@@ -28,7 +28,7 @@ class HotelWiringSolution
                 maxNumOfRooms += (N - roomsWiredCorrectly[k]); // (all rooms - powered rooms) will be powered.
             }
 
-            for (int k = K; k < M; k++) // The rest N-k floors will be switches on.
+            for (int k = K; k < M; k++) // The rest M-k floors will be switches on.
             {
                 maxNumOfRooms += roomsWiredCorrectly[k];
             }
