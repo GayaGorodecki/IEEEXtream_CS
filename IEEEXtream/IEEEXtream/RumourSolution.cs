@@ -32,7 +32,7 @@ class RumourSolution
                     newNum = (maxNum - 1) / 2;
                 }
 
-                // Add the step
+                // Add the step.
                 minimumDistance += 1;
 
                 // Update min and max.
