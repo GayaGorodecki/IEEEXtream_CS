@@ -6,6 +6,9 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Rumour:");
+            RumourSolution.Rumour();
+
             Console.WriteLine("Full Adder:");
             FullAdderSolution.FullAdder();
 
